@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
+import '../styles/app.scss';
+
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
     // for development
