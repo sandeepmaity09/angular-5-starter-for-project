@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
+// import 'bootstrap'; // if we do this then we need $ mean jQuery to work with it
+// import 'bootstrap/dist/css/bootstrap.min.css'; // only compiled css files
+// import 'bootstrap/scss/bootstrap.scss';
 import '../styles/app.scss';
 
 // AoT requires an exported function for factories
@@ -40,4 +43,5 @@ export function createTranslateLoader(http: HttpClient) {
     providers: [AuthGuard],
     bootstrap: [AppComponent]
 })
+
 export class AppModule {}
